@@ -1,0 +1,172 @@
+/* Global Styles */
+
+:root {
+    --violet: #3c4e9f;
+    --lilly: #f1e7e9;
+    --candy: #eb77bb;
+    --table: #ffffff;
+ }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: trade-gothic-next, sans-serif;
+    background-color: var(--lilly);
+    padding-bottom: 2rem;
+  }
+
+  /* Header Styles */
+
+.center-column {
+    margin: 0 auto;
+    max-width: 1400px;
+    /* padding: 3rem 0rem; */
+}
+
+.header {
+    padding: 4rem 0rem;
+    max-width: 600px;
+}
+
+h1 {
+    margin: 0;
+    max-width: 800px;
+    text-transform: uppercase;
+    color: var(--violet);
+    font-size: 102px;
+    line-height: 1.2;
+    font-family: trade-gothic-next, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--violet);
+    line-height: 1.2;
+    /* letter-spacing: 0.0em; */
+}
+
+.header span {
+    font-weight: 700;
+}
+
+/* Table Global */
+table {
+    border-collapse: collapse;
+    margin-right: 2rem;
+    min-width: 800px;
+    background-color: var(--table);
+    border: 4px solid !important;
+}
+
+table, th, td, thead {
+    border: 2px solid var(--violet);
+    color: var(--violet);
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+  }
+
+th {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    /* font-style: italic */
+}
+
+td {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.table-scroll {
+    display: inline-flex;
+    overflow: scroll;
+    width: 1640px;
+    scroll-snap-type: x mandatory;
+}
+
+.cssproperty {
+   width: 500px;
+}
+
+.square {
+    color: black;
+    background-color: var(--candy);
+}
+
+.size1 {
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem;
+}
+
+.size2 {
+    width: 60px;
+    height: 80px;
+    margin: 0.5rem;
+}
+
+.size3 {
+    width: 60px;
+    height: 100px;
+    margin: 0.5rem;
+}
+
+.size4 {
+    margin: 0.5rem;
+    width: 60px;
+    height: 70px;
+}
+
+/* Table Flex */
+
+.flex-align-content .cssproperty {
+    padding: 2rem 0;
+}
+
+.flex-line {
+    display: flex;
+}
+
+.flex-justify__start {
+    justify-content: flex-start;
+}
+
+.flex-justify__end {
+    justify-content: flex-end;
+}
+
+.flex-justify__center {
+    justify-content: center;
+}
+
+.flex-justify__spacebetween {
+    justify-content: space-between;
+}
+
+.flex-justify__spacearound {
+    justify-content: space-around;
+}
+
+.flex-justify__spaceevenly {
+    justify-content: space-evenly;
+}
+
+.flex-aligncontent__spacebetween {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+/* Note for me next time: 
+- Change the classes of the alignment (center, end, start, etc) to specifier css selector, so I dont have to change the class name everytime
+- Check why snaping scroller is not working */
