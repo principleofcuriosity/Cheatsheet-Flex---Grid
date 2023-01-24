@@ -95,7 +95,9 @@ td {
 }
 
 .cssproperty {
+   padding: 1rem;
    width: 500px;
+   height: 200px;
 }
 
 .square {
@@ -129,44 +131,90 @@ td {
 
 /* Table Flex */
 
-.flex-align-content .cssproperty {
-    padding: 2rem 0;
-}
-
 .flex-line {
     display: flex;
 }
 
-.flex-justify__start {
+.flex-justify-content .start {
     justify-content: flex-start;
 }
 
-.flex-justify__end {
+.flex-justify-content .end {
     justify-content: flex-end;
 }
 
-.flex-justify__center {
+.flex-justify-content .center {
     justify-content: center;
 }
 
-.flex-justify__spacebetween {
+.flex-justify-content .spacebetween {
     justify-content: space-between;
 }
 
-.flex-justify__spacearound {
+.flex-justify-content .spacearound {
     justify-content: space-around;
 }
 
-.flex-justify__spaceevenly {
+.flex-justify-content .spaceevenly {
     justify-content: space-evenly;
 }
 
-.flex-aligncontent__spacebetween {
+.flex-align-content .start {
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.flex-align-content .end {
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.flex-align-content .center {
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.flex-align-content .spacebetween {
+    height: 300px;
     flex-wrap: wrap;
     align-content: space-between;
 }
 
+.flex-align-content .spacearound {
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.flex-align-items .start {
+    align-items: flex-start;
+}
+
+.flex-align-items .end {
+    align-items: flex-end;
+}
+
+.flex-align-items .center {
+    align-items: center;
+}
+
+.flex-align-items .stretch {
+    align-items: stretch;
+}
+
+.flex-align-items > .square1 {
+    height: 1px !important;
+}
+
+.flex-align-items .baseline {
+    align-items: baseline;
+}
+
 
 /* Note for me next time: 
-- Change the classes of the alignment (center, end, start, etc) to specifier css selector, so I dont have to change the class name everytime
+- stretch not working
 - Check why snaping scroller is not working */
